@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggling image</title>
+    <script type="text/javascript">
+        function flipimage(){
+            var dom = document.getElementById('apple').style;
+            if(dom.visibility == 'visible'){
+                dom.visibility = 'hidden'
+            }
+            else {
+                dom.visibility = 'visible'
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <div id="apple" style="visibility: visible;">
+            <img src="bg1.jpg" alt="">
+        </div>
+        <p>
+            <input type="button" value="Toggle image" onclick="flipimage()">
+        </p>
+    </form>
+</body>
+</html>

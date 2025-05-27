@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    var c=0,t1;
+    function start(){
+        t1=window.setInterval(incr,100)
+    }
+    function incr(){
+        c=c+1;
+        t.innerHTML = "Text Growing " + c +" pts"
+        t.style.fontSize = c +"pt"
+        if(c>50){
+            window.clearInterval(t1);
+            alert("Font size reached 50pt. Text will now shrink")
+            t1 = setInterval(decr, 100)
+        }
+        t.style.color = 'red'
+    }
+    function decr(){
+        c=c-1;
+        t.innerHTML = "Text Shrinking " + c +" pts"
+        t.style.fontSize = c +"pt"
+        if(c==5){
+            window.clearInterval(t1);
+        }
+        t.style.color = 'blue'
+    }
+</script>
+<body bgcolor="#ffdead" onload="start()">
+    <p id="t" align="center"></p>
+</body>
+</html>

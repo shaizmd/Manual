@@ -1,0 +1,18 @@
+table,li
+{
+font-family: "lucida calligraphy", arial, 'sans serif';
+margin-left: 10pt;
+}
+
+body { background-color:rgb(200,255,205); }
+li,td { font-size:75%;}
+td { padding:0.5cm; }
+th {
+font-size:85%;
+}
+h1{color: #483d8b;}
+table
+{
+background-color: rgb(100,255,105);
+}
+ol li {list-style-type:lower-roman;}

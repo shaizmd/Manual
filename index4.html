@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Program 4 0–10 Square and Cubes</title>
+  <style type="text/css">
+    table {
+      color: #333;
+      font-family: 'Helvetica', Arial, 'sans-serif';
+      width: 640px;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      height: 30px;
+    }
+    th {
+      background: #2676af;
+      font-weight: bold;
+      color: white;
+    }
+    td {
+      /* background: #FAFAFA; */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+    document.write("<center><table>");
+    document.write("<tr><th>Number</th><th>Square</th><th>Cube</th></tr>");
+    for (var n = 0; n <= 10; n++) {
+      document.write("<tr><td>" + n + "</td><td>" + (n * n) + "</td><td>" + (n * n * n) + "</td></tr>");
+    }
+    document.write("</table></center>");
+  </script>
+</body>
+</html>

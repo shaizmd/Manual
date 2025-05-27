@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 7</title>
+    <script>
+        var toplayer = 'layer4'
+        function stack(totop){
+            var oldtop = document.getElementById(toplayer).style;
+            var newtop = document.getElementById(totop).style;
+
+            oldtop.zIndex = '0'
+            newtop.zIndex = '10';
+
+            toplayer = document.getElementById(totop).id;
+        }
+    </script>
+    <link rel="stylesheet" href="stacking.css">
+</head>
+<body bgcolor="teal">
+    <div class="ls1" id="layer1" onmouseover="stack('layer1')">
+        <b>...FIRST PARAGRAGPH..LAST ONE (Pink)</b>
+    </div>
+    <div class="ls2" id="layer2" onmouseover="stack('layer2')">
+        <b>...SECOND PARAGRAGPH..LAST BUT ONE (Gray)</b>
+    </div>
+    <div class="ls3" id="layer3" onmouseover="stack('layer3')">
+        <b>...THIRD PARAGRAGPH(Blue)</b>
+    </div>
+    <div class="ls4" id="layer4" onmouseover="stack('layer4')">
+        <b>...FOURTH PARAGRAGPH(Yellow)</b>
+    </div>
+</body>
+</html>

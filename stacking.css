@@ -1,0 +1,36 @@
+.ls1{
+    padding: 1in;
+    border: 2px solid black;
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    background-color: pink;
+}
+.ls2{
+    padding: 1in;
+    border: 2px solid black;
+    width: 500px;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    background-color: gray;
+}
+.ls3{
+    padding: 1in;
+    border: 2px solid black;
+    width: 500px;
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    background-color: blue;
+}
+.ls4{
+    padding: 1in;
+    border: 2px solid black;
+    width: 500px;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    background-color: yellow;
+}

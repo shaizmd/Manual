@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 640px;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        th,td{
+            text-align: center;
+            border: 1px solid #ccc;
+            height: 30px;
+        }
+        th{
+            background-color: rgb(70, 122, 165);
+            color: white;
+            font-weight: bold;
+        }
+        
+    </style>
+    <script type="text/javascript">
+        document.write("<center><table>")
+            document.write("<tr><th>Numbers</th><th>Squares</th><th>Cubes</th></tr>")
+            for(let n=0;n<=10;n++){
+                document.write("<tr><td>"+n+"</td><td>"+(n*n)+"</td><td>"+(n*n*n)+"</td></tr>");
+            }
+             document.write("</center></table>")
+    </script>
+</body>
+</html>

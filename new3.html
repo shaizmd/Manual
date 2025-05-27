@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 15px 32px;
+        font-size: 16px;
+    }
+</style>
+<script src="calculator.js" type="text/javascript"></script>
+<body>
+    <h1>My Calculator</h1>
+    <table border="1" cellspacing="5" cellpadding="5" width="600">
+        <tr align="center">
+            <td>First Number</td>
+            <td>Second Number</td>
+            <td>Result</td>
+        </tr>
+        <tr align="center">
+            <td><input type="number" name="number1" id="num1"></td>
+            <td><input type="number" name="number2" id="num2"></td>
+            <td><input type="text" name="result" id="result" onclick="this.blur()" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button class="button" onclick="showresult(1)">+</button>
+                <button class="button" onclick="showresult(1)">-</button>
+                <button class="button" onclick="showresult(1)">+</button>
+                <button class="button" onclick="showresult(1)">CLEAR</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
